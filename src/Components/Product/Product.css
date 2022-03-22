@@ -1,0 +1,66 @@
+.out{
+    border: 1px solid 
+    rgba(149, 160, 167, 1);
+    border-radius: 15px;
+    width: 315px;
+   height: 515px;
+   position: relative;
+}
+.out img{
+    width:  300px;  
+    height:  300px;
+    border-radius: 8px;
+}
+.but{
+    width: 100%;
+    background-color: rgba(255, 224, 179, 1);
+    border: 1px solid 
+    rgba(149, 160, 167, 1);
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    
+
+}
+.but:hover{
+    background-color: orange;
+}
+.phand{
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.titlee{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 25px;
+letter-spacing: 0.0015em;
+padding-top: 12px;
+color: #0E161A;
+
+}
+.price{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+letter-spacing: 0.0015em;
+padding-top: 11px;
+color: #0E161A;
+
+}
+.capu{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.004em;
+
+color: #2A414F;
+
+}
