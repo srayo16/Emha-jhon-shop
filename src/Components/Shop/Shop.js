@@ -40,13 +40,19 @@ const Shop = () => {
             exits.quantity += 1; 
             newCart = [...rest , exits];
         }
-        
+ 
 
 
 
         setCart(newCart);
         addToDb(pd.id);
  
+    }
+
+    let clearCart = () =>{
+        localStorage.removeItem('shopping-cart');
+        window.location.reload();
+    
     }
         return (
         <div className='hole-conto'>
@@ -60,7 +66,7 @@ const Shop = () => {
             
         </div>
             <div className="cart-conto">
-            <Cart cart = {cart}></Cart>
+            <Cart cart = {cart} clearCart={clearCart}></Cart>
             </div>
         </div>
     );
