@@ -8,15 +8,19 @@
     grid-gap: 50px;
 }
 .cart-conto{
-    position: fixed;
-    left: 80%;
-    width: 20%;
-    height: 900px;
+   
+    /* position: fixed;
+    left: 80%; */
+    /* width: 20%; */
+    height: 100%;
     
 
 background: rgba(255, 153, 0, 0.3);
 }
-
+.forpos{
+    position: sticky;
+    top: 10px;
+}
 .titless{
     font-family: 'Lato';
 font-style: normal;
@@ -77,24 +81,12 @@ border-radius: 4px;;
 
 
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 840px) {
     .shop-conto{
         display: grid;
         grid-template-columns: repeat(1 , 1fr);
         margin-left: 15px;
     }
- .hole-conto{
-     width: 100%;
- }
-  
+ 
 }
-@media screen and (max-width: 840px) {
-    .shop-conto{
-        display: grid;
-        grid-template-columns: repeat(2 , 1fr);
-        margin-left: 25px;
-    }
-    .hole-conto{
-        width: 100%;
-    }
-}
+
