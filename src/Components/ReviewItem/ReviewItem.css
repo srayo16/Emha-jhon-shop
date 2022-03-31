@@ -1,0 +1,51 @@
+.reviewItems{
+    width: 571px;
+    margin-top: 21px;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+}
+.reviewItems img {
+    
+    border-radius: 6px;
+    width: 91px;
+    height: 91px;
+    margin-left: 8px;
+    margin-right: 17px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.main{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main p {
+    margin: 0;
+    
+}
+.tools{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.pdTitle{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+
+color: #1C2B35;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 25px;
+letter-spacing: 0.0015em;
+
+color: #1C2B35;
+
+}

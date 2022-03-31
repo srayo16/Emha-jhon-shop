@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../../images/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -9,14 +10,14 @@ const Header = () => {
 
         <nav className='navu overflow-hidden'>
             <div>
-            <img className='image-fluid imu' src= {logo} alt="" />
+            <img className='image-fluid imu' src= {logo} alt="/"  />
             </div>
             
            <div className='alu'>
-           <a href="">Order</a>
-            <a href="">Order Review</a>
-            <a href="">Manage Inventory</a>
-            <a href="">About us</a>
+           <Link to="/">Shop</Link>
+            <Link to="/order">Orders</Link>
+            <Link to="/inventory">Inventory</Link>
+            <Link to="/about">About us</Link>
            </div>
             
         </nav>
