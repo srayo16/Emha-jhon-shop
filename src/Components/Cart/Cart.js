@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Children } from 'react';
+import { Link } from 'react-router-dom';
 
-const Cart = ({cart ,clearCart}) => {
+const Cart = ({cart ,clearCart ,children}) => {
     // console.log(cart);
     let sum = (previous , current) => previous + current.price * current.quantity;
     let total = cart.reduce(sum , 0);
@@ -22,7 +23,8 @@ const Cart = ({cart ,clearCart}) => {
         <p className='gene'>Tax: $ {tax}</p>
         <h6 className='grand'>Grand Total: $ {grand}</h6>
         <button className='buttu text-light mb-3 mt-5' onClick={clearCart}>Clear Cart</button>
-        <button className='buttu2 text-light'>Review Order</button>
+        {children}
+        {/* <button className='buttu2 text-light'> <Link to="/order" className='text-light text-decoration-none'>Review Order</Link> </button> */}
         </div>
     );
 };
