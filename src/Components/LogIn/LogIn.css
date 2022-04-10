@@ -1,0 +1,97 @@
+.form-containerss {
+    width: 500px;
+    height: 600px;
+    background: #FFFFFF;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 128px;
+}
+
+.titless {
+    width: 83px;
+    height: 42px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    padding-top: 34px;
+    letter-spacing: 0.0025em;
+    margin-left: 150px;
+    color: #2A414F;
+
+}
+
+.input-groupsss {
+    padding-top: 60px;
+}
+
+.input-groupsss label {
+    width: 41px;
+    height: 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #2A414F;
+    display: block;
+    margin-bottom: 9px;
+}
+
+.logg {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.handleButton {
+    width: 415px;
+    height: 55px;
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    margin-top: 44px;
+
+}
+
+.logtitleee {
+    width: 50px;
+    height: 25px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+
+    color: #0E161A;
+
+}
+
+.linkuu {
+    width: 263px;
+    height: 18px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    letter-spacing: 0.0025em;
+    
+    color: #FF9900;
+    text-decoration: none;
+}
+.neww{
+    margin-left: 80px;
+    margin-top: 9px;
+}
