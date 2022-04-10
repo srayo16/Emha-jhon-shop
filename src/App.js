@@ -8,6 +8,7 @@ import Order from './Components/Order/Order';
 import About from './Components/About/About';
 import LogIn from './Components/LogIn/LogIn';
 import SignUp from './Components/SignUp/SignUp';
+import { FaBeer } from 'react-icons/fa';
 
 
 function App() {

@@ -1,6 +1,6 @@
 .form-containerss {
     width: 500px;
-    height: 600px;
+    height: 650px;
     background: #FFFFFF;
     border: 1px solid #95A0A7;
     box-sizing: border-box;
@@ -9,6 +9,7 @@
     justify-content: center;
     margin: 0 auto;
     margin-top: 128px;
+
 }
 
 .titless {
@@ -87,11 +88,42 @@
     /* identical to box height */
 
     letter-spacing: 0.0025em;
-    
+
     color: #FF9900;
     text-decoration: none;
 }
-.neww{
+
+.neww {
     margin-left: 80px;
     margin-top: 9px;
+}
+
+.btuuu {
+    width: 415px;
+    height: 55px;
+    background-color: #FFFFFF;
+    border: 1px solid 
+    rgba(149, 160, 167, 1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+
+.btu-titu {
+    /* width: 165px; */
+    height: 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    padding-left: 10px;
+
+    
+    color: #2A414F;
+
 }

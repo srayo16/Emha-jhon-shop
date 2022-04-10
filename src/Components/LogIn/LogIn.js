@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LogIn.css';
+import { FcGoogle } from 'react-icons/fc';
 
 const LogIn = () => {
     return (
@@ -19,7 +20,10 @@ const LogIn = () => {
                         </div>
                         <button className='handleButton'><span className='logtitleee'>Login</span></button>
                     </form>
-                    <p className='neww'>New to Ema-jhon? <Link to='/signup' className='linkuu'>Create New Account</Link> </p>
+                    <p className='neww pb-2'>New to Ema-jhon? <Link to='/signup' className='linkuu'>Create New Account</Link> </p>
+                   <hr />
+                   <p className='text-center'>Or</p>
+                   <button className='btuuu'> <FcGoogle className='fs-2'></FcGoogle><span className='btu-titu'>Continue With google</span> </button>
                 </div>
             </div>
         </div>
