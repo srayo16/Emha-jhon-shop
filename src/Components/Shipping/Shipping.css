@@ -1,0 +1,12 @@
+.titleShip{
+    height: 42px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    padding-top: 34px;
+    letter-spacing: 0.0025em;
+    margin-left: 50px;
+    color: #2A414F;
+}

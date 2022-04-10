@@ -1,6 +1,6 @@
 .form-containerss {
     width: 500px;
-    height: 650px;
+    
     background: #FFFFFF;
     border: 1px solid #95A0A7;
     box-sizing: border-box;
@@ -12,8 +12,8 @@
 
 }
 
-.titless {
-    width: 83px;
+.titlesss {
+    /* width: 83px; */
     height: 42px;
     font-family: 'Lato';
     font-style: normal;
@@ -32,7 +32,7 @@
 }
 
 .input-groupsss label {
-    width: 41px;
+    /* width: 41px; */
     height: 20px;
     font-family: 'Lato';
     font-style: normal;
@@ -51,6 +51,7 @@
     border: 1px solid #95A0A7;
     box-sizing: border-box;
     border-radius: 5px;
+    font-size: 22px;
 }
 
 .handleButton {
@@ -59,8 +60,22 @@
     background: rgba(255, 153, 0, 0.3);
     border-radius: 5px;
     border: none;
-    margin-top: 44px;
+    margin-top: 10px;
+    cursor: pointer;
 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+
+    color: #0E161A;
+  
+
+}
+.handleButton:hover{
+    background: rgba(255, 153, 0, 0.5);
 }
 
 .logtitleee {
@@ -108,8 +123,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    cursor: pointer;
     
+}
+.btuuu:hover{
+    background-color: #e4e9ec;
 }
 
 .btu-titu {
