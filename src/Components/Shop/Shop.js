@@ -7,6 +7,18 @@ import Product from '../Product/Product';
 import './Shop.css'
 const Shop = () => {
     const [products , setProducts] = UseProducts();
+    const [pdCount , setPdCount] = useState(0);
+
+   useEffect(() =>{
+       fetch('http://localhost:5000/pdcount')
+       .then(res => res.json())
+       .then(data => {
+           const count = data.count;
+          const pages = Math.ceil(count/10);
+          setPdCount(pages);
+       })
+   } , [])
+console.log(pdCount);
     useEffect( () =>{
         let getstorecart = getStoredCart();
         const savedCArt = [];
@@ -58,7 +70,7 @@ const Shop = () => {
             {
                 products.map(pd => <Product pd={pd} addtoCart={addtoCart} key ={pd._id} ></Product>)
             }
-           
+        
             
         </div>
             <div className="cart-conto">
@@ -66,6 +78,11 @@ const Shop = () => {
             <Link to="/order"><button className='buttu2 text-light text-decoration-none'>Review Order</button></Link>
             </Cart>
             </div>
+            <div className=' text-center container mt-5 mb-5'>
+               {
+                   [...Array(pdCount).keys()].map((number , index) => <button className='mx-2 btnCss' key={index}>{number + 1}</button>)
+               }
+           </div>
         </div>
     );
 };

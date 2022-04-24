@@ -9,6 +9,10 @@
     grid-gap: 50px;
     margin-left: 180px;
 }
+.btnCss{
+    background-color: 'white';
+    border: 1px solid orange;
+}
 .cart-conto{
    
 
