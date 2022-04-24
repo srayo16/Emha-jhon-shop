@@ -11,7 +11,7 @@ const Shop = () => {
         let getstorecart = getStoredCart();
         const savedCArt = [];
         for(const id in getstorecart){
-            let addedproduct = products.find(pd => pd.id === id);
+            let addedproduct = products.find(pd => pd._id === id);
            
             if(addedproduct){
                 let quantity = getstorecart[id];
@@ -26,13 +26,13 @@ const Shop = () => {
     const [cart , setCart] = useState([]);
     const addtoCart = (pd) => {
         let newCart = [];
-        const exits = products.find(product => product.id === pd.id);
+        const exits = products.find(product => product._id === pd._id);
         if(!exits){
             pd.quantity = 1;
             newCart = [...cart , pd];
         }
         else{
-            let rest = products.filter(product => product.id !== pd.id);
+            let rest = products.filter(product => product._id !== pd._id);
             exits.quantity += 1; 
             newCart = [...rest , exits];
         }
@@ -41,7 +41,7 @@ const Shop = () => {
 
 
         setCart(newCart);
-        addToDb(pd.id);
+        addToDb(pd._id);
  
     }
 
@@ -56,7 +56,7 @@ const Shop = () => {
             
         
             {
-                products.map(pd => <Product pd={pd} addtoCart={addtoCart} key ={pd.id} ></Product>)
+                products.map(pd => <Product pd={pd} addtoCart={addtoCart} key ={pd._id} ></Product>)
             }
            
             

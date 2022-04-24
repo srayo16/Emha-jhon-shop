@@ -16,16 +16,16 @@ const Order = () => {
     
     }
     let deleteproduct = product => {
-        let rest = cart.filter(pd =>pd.id !== product.id);
+        let rest = cart.filter(pd =>pd._id !== product._id);
         setCart(rest);
-        removeFromDb(product.id);
+        removeFromDb(product._id);
     }
     return (
         <div className='hole-conto'>
         <div className="review-conto mt-5 pt-5">
         
         {
-            cart.map(pd =>  <ReviewItem key={pd.id} pd={pd} deleteproduct={deleteproduct}></ReviewItem> )
+            cart.map(pd =>  <ReviewItem key={pd._id} pd={pd} deleteproduct={deleteproduct}></ReviewItem> )
         }
        
         

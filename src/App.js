@@ -14,8 +14,6 @@ import Shipping from './Components/Shipping/Shipping';
 
 function App() {
   
-
-
   return (
     <div>
       
