@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import UseCart from '../../Hook/UseCart';
-import UseProducts from '../../Hook/UseProducts';
 import { removeFromDb } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import './Order.css';
 const Order = () => {
-    const [products , setProducts] = UseProducts();
-    const [cart , setCart] = UseCart(products);
+    const [cart , setCart] = UseCart();
     // console.log(cart)
     let clearCart = () =>{
         localStorage.removeItem('shopping-cart');

@@ -73,7 +73,7 @@ const Shop = () => {
             </div>
             <div className=' text-center container mt-5 mb-5 forselect'>
                 {
-                    [...Array(pdCount).keys()].map((number, index) => <button onClick={() => setPage(number + 1)} className={page === number + 1 ? 'selected' : ''} key={index}>{number + 1}</button>)
+                    [...Array(pdCount).keys()].map((number, index) => <button onClick={() => setPage(number)} className={page === number ? 'selected' : ''} key={index}>{number + 1}</button>)
                 }
 
                 <select onChange={(e) => setSize(e.target.value)} >

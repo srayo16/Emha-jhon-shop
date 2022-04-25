@@ -28,13 +28,11 @@ const UseCart = () =>{
             }
             
         }
+        setCart(saveCart);
       })
       
       
-      
-      
-      
-        setCart(saveCart);
+        
     } , [])
     return [cart , setCart]
 }
