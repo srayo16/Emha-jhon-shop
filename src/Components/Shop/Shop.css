@@ -9,9 +9,15 @@
     grid-gap: 50px;
     margin-left: 180px;
 }
-.btnCss{
+.forselect button{
+    margin-right: 10px;
     background-color: 'white';
     border: 1px solid orange;
+}
+
+.forselect .selected{
+    background-color: orange;
+    color: aliceblue;
 }
 .cart-conto{
    
